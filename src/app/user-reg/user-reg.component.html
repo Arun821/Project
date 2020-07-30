@@ -1,0 +1,130 @@
+<!-- <div class="card">
+    <form (ngSubmit) = "NewUser()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        
+                        <tr>
+                            <td><label>User Name</label></td>
+                            <td><input type="text" name="h_name" [(ngModel)]="usersList.userName"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Place</label></td>
+                            <td><input type="text" name="place" [(ngModel)]="usersList.place"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Phone Number</label></td>
+                            <td><input type="text" name="phn" [(ngModel)]="usersList.phone"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td><input type="text" name="email" [(ngModel)]="usersList.email"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td><input type="text" name="pass" [(ngModel)]="usersList.password"/></td>
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Sign Up"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div> -->
+
+<!-- <div class="wrapper" >
+    <div class="inner">
+        <form (ngSubmit) = "NewUser()">
+            <h3>{{title}}</h3>
+            
+            <div class="form-wrapper">
+                <label for="">User Name</label>
+                <input type="text" class="form-control" name="h_name" [(ngModel)]="usersList.userName"/>
+            </div>
+            <div class="form-wrapper">
+                <label for="">Place</label>
+                <input type="text" class="form-control" name="place" [(ngModel)]="usersList.place"/>
+            </div>
+            <div class="form-wrapper">
+                <label for="">Phone Number</label>
+                <input type="number" class="form-control" name="phn" [(ngModel)]="usersList.phone"/>
+            </div>
+            <div class="form-wrapper">
+                <label for="">Email</label>
+                <input type="email" class="form-control" name="email" [(ngModel)]="usersList.email"/>
+            </div>
+            <div class="form-wrapper">
+                <label for="">Password</label>
+                <input type="password" class="form-control">
+            </div>
+            <div class="form-wrapper">
+                <label for="">Confirm Password</label>
+                <input type="password" class="form-control" name="pass" [(ngModel)]="usersList.password"/>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> I caccept the Terms of Use & Privacy Policy.
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <input type="submit" value="Sign Up"/>
+            
+        </form>
+    </div>
+</div> -->
+
+<div class="main">
+
+    <!-- Sign up form -->
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">{{title}}</h2>
+                    <form (ngSubmit) = "NewUser()" class="register-form" id="register-form">
+                        
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="h_name" [(ngModel)]="usersList.userName" id="name" placeholder="User Name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-pin material-icons-name"></i></label>
+                            <input type="text" name="place" [(ngModel)]="usersList.place" id="name" placeholder="Place"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-phone material-icons-name"></i></label>
+                            <input type="text" name="phn" [(ngModel)]="usersList.phone" id="name" placeholder="Phone Number"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" [(ngModel)]="usersList.email" id="email" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="pass" id="pass" placeholder="Password"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" name="pass" [(ngModel)]="usersList.password" id="re_pass" placeholder="Confirm Password"/>
+                        </div>
+                        
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Sign Up"/>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="signup-image">
+                    <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                    <a href="#" class="signup-image-link">I am already member</a>
+                </div> -->
+            </div>
+        </div>
+    </section>

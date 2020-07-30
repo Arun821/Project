@@ -1,0 +1,151 @@
+
+  <main role="main">    
+ 
+    <header class="section-top-padding background-image text-center" style="background-image:url(assets/img/img-05.jpg)">
+      <h1 class="text-extra-thin text-white font-weight-bold text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-10 margin-top-80">
+        Easy OP
+      </h1>
+      <h1 class="text-extra-thin text-white text-s-size-30 text-m-size-40 text-size-50 text-line-height-1 margin-bottom-40 margin-top-80">
+        Save your Time and Keep Calm
+      </h1>
+      <i class="slow icon-sli-arrow-down text-white margin-top-20 text-size-16"></i>
+
+      <img class="arrow-object" src="assets/img/arrow-object-dark.svg" alt="">
+    </header>
+    
+    <section class="section-top-padding background-white">
+        <div class="line text-center">
+          <i class="icon-sli-heart text-primary text-size-40"></i>
+          <h2 class="text-dark text-size-50 text-m-size-40"><b>Our Medical Services</b></h2>
+          <hr class="break background-primary break-small break-center margin-bottom-50">
+        </div>
+        <div class="line">
+          <div class="margin2x">
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Dentisty</h3>
+                <img src="assets\img\dental-fb.jpg" alt="">
+                               
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Cardiology</h3>
+                <img src="assets\img\cardiologist-West-Palm-Beach10.jpg" alt="">
+                                
+              </div>
+            </div>
+            
+            <div class="s-12 m-6 l-4 margin-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">ENT Specialists</h3>
+                <img src="assets\img\Ent.jpg" alt="">
+                               
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Ortho</h3>
+                 <img src="assets\img\ortho.jpg" alt="">                
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Neuroanatomy</h3>
+                <img src="assets\img\neuro.jpg" alt="">
+                                
+              </div>
+            </div>
+            <div class="s-12 m-6 l-4 margin-m-bottom-60">
+              <div class="float-left">
+                
+              </div>
+              <div class="margin-left-60">
+                <h3 class="text-strong text-size-20 text-line-height-1 margin-bottom-20">Blood Screening</h3>
+                <img src="assets\img\Blood-Screening-Market.jpg" alt="">
+                               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <div class="card">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <!-- <th>
+                                <button class="btn btn-primary" (click)='toggleImage()'>
+                                    {{showImage? 'Hide' : 'Show'}} Image
+                                </button>
+                            </th> -->
+                            <th>Doctor Name</th>
+                            <th>Designation</th>
+                            <th>Specialisation</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = 'let doctor of doctors'>
+                            <!-- <td><img *ngIf = 'showImage'
+                                [src]='product.imageUrl'
+                                [title]='product.productName'
+                                [style.width.px]='imageWidth'
+                                [style.margin.px]='imagemargin'>
+                            </td> -->
+                            <td>{{ doctor.name }}</td>
+                            <td>{{ doctor.designation }}</td>
+                            <td>{{ doctor.specialisation }}</td>
+                            
+                            <td class="btn-group">
+                                <button type="button" class="btn btn-default btn" (click) = "updateDoctor(doctor._id)">Edit</button>  
+                                <button type="button" class="btn btn-default btn" (click) = "deleteDoctor(doctor._id)">Delete</button> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <section class="section-small-padding background-dark text-center">      
+      <div class="line">
+        <h2 class="text-white text-size-50 text-m-size-40 margin-bottom-20">Get <b>Free Version</b></h2>
+        <div class="m-10 l-6 xl-4 center">
+          <div class="margin">
+            <a class="s-12 m-6 margin-s-bottom" href="/">
+              <img class="full-img right" src="assets/img/google-play.svg" alt="">
+            </a>
+            <a class="s-12 m-6" href="/">
+              <img class="full-img" src="assets/img/app-store.svg" alt="">
+            </a>
+          </div>
+        </div>                                                                                               
+      </div>       
+    </section>     
+    
+  </main>

@@ -1,0 +1,98 @@
+<!-- <div class="card">
+    <form (ngSubmit) = "UpdateDoctor()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Doctor Id</label></td>
+                            <td><input type="text" name="id" [(ngModel)]="doctor.doctorId" value = "{{doctor.doctorId}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Doctor Nmae</label></td>
+                            <td><input type="text" name="h_name" [(ngModel)]="doctor.name" value = "{{doctor.name}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Designation</label></td>
+                            <td><input type="text" name="place" [(ngModel)]="doctor.designation" value = "{{doctor.designation}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Specialisation</label></td>
+                            <td><input type="text" name="phn" [(ngModel)]="doctor.specialisation" value="{{doctor.specialisation}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Phone Number</label></td>
+                            <td><input type="text" name="email" [(ngModel)]="doctor.phone" value="{{doctor.phone}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td><input type="text" name="pass" [(ngModel)]="doctor.email" value="{{doctor.email}}"/></td>
+                        </tr>
+                        <tr>
+                            <td><label>Image</label></td>
+                            <td><input type="text" name="pass" [(ngModel)]="doctor.imageUrl" value="{{doctor.imageUrl}}"/></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="Add"/></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
+ -->
+
+ <div class="main">
+
+    
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">{{title}}</h2>
+                    <form (ngSubmit) = "UpdateDoctor()" class="register-form" id="register-form">
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-id material-icons-name"></i></label>
+                            <input type="text" name="id" [(ngModel)]="doctor.doctorId" id="name" placeholder="Doctor Id" value = "{{doctor.doctorId}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="h_name" [(ngModel)]="doctor.name" id="name" placeholder="Doctor Nmae" value = "{{doctor.name}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="desi" [(ngModel)]="doctor.designation" id="name" placeholder="Designation" value = "{{doctor.designation}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="phn" [(ngModel)]="doctor.specialisation" id="name" placeholder="Specialisation" value="{{doctor.specialisation}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-phone material-icons-name"></i></label>
+                            <input type="text" name="email" [(ngModel)]="doctor.phone" id="name" placeholder="Phone Number" value="{{doctor.phone}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email"  name="email" [(ngModel)]="doctor.phone" id="email" placeholder="Email" value="{{doctor.email}}"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="text" name="pass" [(ngModel)]="doctor.imageUrl" id="re_pass" placeholder="Image Url" value="{{doctor.imageUrl}}"/>
+                        </div>
+                        
+                        <div class="form-group form-button">
+                            <input type="submit" name="signup" id="signup" class="form-submit" value="Update"/>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>    

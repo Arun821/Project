@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="card-header">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th>Doctor Name</th>
+                        <th>Designation</th>
+                        <th>Specialisation</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor = 'let doctor of doctors'>
+                        
+                        <td>{{ doctor.name }}</td>
+                        <td>{{ doctor.designation }}</td>
+                        <td>{{ doctor.specialisation }}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

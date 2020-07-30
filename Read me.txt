@@ -1,0 +1,10 @@
+EASY OP
+
+This is the easy way to book Op , we can save our time.
+
+there are two registrations,
+1. Hospital
+2. Public
+
+After login, hospital admin can add, remove and edit doctors . Users can view the Doctor's list and book there op.
+
