@@ -5,46 +5,46 @@
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">{{title}}</h2>
-                        <form (ngSubmit) = "AddDoctor()" class="register-form" id="register-form">
+                        <form (ngSubmit) = "AddDoctor()" #addDoctor = "ngForm" class="register-form" id="register-form">
                             <div class="form-group">
-                                <label for="name" ><i class="zmdi zmdi-id material-icons-name"></i></label>
-                                <input type="text" name="id" [(ngModel)]="doctorList.doctorId" required id="name" placeholder="Doctor Id" />
+                              
+                                <input type="text" #id="ngModel" ngModel required name="id" [(ngModel)]="doctorList.doctorId" required id="name" placeholder="Doctor Id" />
                                 
                             </div>
                             <div class="form-group">
-                                <label for="name" ><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="d_name" [(ngModel)]="doctorList.name" required id="name" placeholder="Doctor Nmae" />
+                               
+                                <input type="text" #name="ngModel" ngModel required name="d_name" [(ngModel)]="doctorList.name" required id="name" placeholder="Doctor Nmae" />
                                 
                             </div>
                             <div class="form-group">
-                                <label for="name" ><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="desi" [(ngModel)]="doctorList.designation" required id="name" placeholder="Designation" />
+                                
+                                <input type="text" #designation="ngModel" ngModel required name="desi" [(ngModel)]="doctorList.designation" required id="name" placeholder="Designation" />
                                 
                             </div>
                             <div class="form-group">
-                                <label for="name" ><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="spc" [(ngModel)]="doctorList.specialisation" required id="name" placeholder="Specialisation" />
+                                
+                                <input type="text" #specialisation="ngModel" ngModel required name="spc" [(ngModel)]="doctorList.specialisation" required id="name" placeholder="Specialisation" />
                                 
                             </div>
                             <div class="form-group">
-                                <label for="name" ><i class="zmdi zmdi-phone material-icons-name"></i></label>
-                                <input type="number" name="phone" [(ngModel)]="doctorList.phone" required id="name" placeholder="Phone Number" />
+                                
+                                <input type="number" #phone="ngModel" pattern="^((\\+91-?)|0)?[0-9]{10}$" ngModel required name="phone" [(ngModel)]="doctorList.phone" required id="name" placeholder="Phone Number" />
                                 
                             </div>
                             <div class="form-group">
-                                <label for="email" ><i class="zmdi zmdi-email"></i></label>
-                                <input type="email"  name="email" [(ngModel)]="doctorList.email" required id="email" placeholder="Email" />
+                                
+                                <input type="email" #email="ngModel" ngModel required name="email" [(ngModel)]="doctorList.email" required id="email" placeholder="Email" />
                                 
                             </div>
                             
                             <div class="form-group">
-                                <label for="re-pass" ><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="text" name="image" [(ngModel)]="doctorList.imageUrl" required id="re_pass" placeholder="Image Url" />
+                                
+                                <input type="text" #image="ngModel" ngModel required name="image" [(ngModel)]="doctorList.imageUrl" required id="re_pass" placeholder="Image Url" />
                                 
                             </div>
                             
                             <div class="form-group form-button">
-                                <input type="submit" name="signup" id="signup" class="form-submit"   value="Add"/>
+                                <input type="submit"  [disabled]="addDoctor.invalid" name="signup" id="signup" class="form-submit"   value="Add"/>
                             </div>
                         </form>
                     </div>

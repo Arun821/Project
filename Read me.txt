@@ -7,4 +7,3 @@ there are two registrations,
 2. Public
 
 After login, hospital admin can add, remove and edit doctors . Users can view the Doctor's list and book there op.
-
